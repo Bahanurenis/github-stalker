@@ -1,0 +1,19 @@
+[project]
+name = "github-stalker"
+description = "hello"
+authors = [{name = "Bahanur Enis", email = "bahanurenis@gmail.com"}]
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "click"
+]
+
+[project.scripts]
+github-stalker = "app:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black"
+]
