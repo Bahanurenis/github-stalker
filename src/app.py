@@ -133,7 +133,7 @@ def repos(ctx: click.Context, repo_name: str):
             + f"{repo.visibility}\n"
             + "\n"
         )
-        issues: List[issue.Issue] = repo.issues
+        issues: List[Issue] = repo.issues
         if len(issues) != 0:
             click.echo(click.style("Last ten issue on this repo: \n", fg="red"))
             for issue in issues:
